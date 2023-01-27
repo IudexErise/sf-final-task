@@ -1,0 +1,27 @@
+.container {
+  height: 32px;
+  display: grid;
+  grid-template-columns: 1fr 32px;
+  margin-left: 128px;
+  gap: 4px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userName {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.logout {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgb(0, 0, 0, 0.4);
+  cursor: pointer;
+  text-align: right;
+}

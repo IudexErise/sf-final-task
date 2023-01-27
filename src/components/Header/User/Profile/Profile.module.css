@@ -1,0 +1,49 @@
+.limits {
+  width: 175px;
+  height: 63px;
+  border-radius: 5px;
+  background-color: rgb(217, 217, 217, 0.3);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 7px;
+}
+
+.limits_text {
+  font-size: 10px;
+  line-height: 12px;
+  color: rgb(0, 0, 0, 0.4);
+  text-align: right;
+}
+
+.limits_used {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.limits_total {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;  
+  color: #8AC540;
+}
+
+.registration {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  height: 32px;
+  display: grid;
+  grid-template-columns: 1fr 32px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+}

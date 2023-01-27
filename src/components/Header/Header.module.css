@@ -3,9 +3,13 @@
   height: 93px;
   margin: 0 auto;
   background-color: white;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 1fr 236px 1fr;
+}
+
+.container_logo {
+  width: 542px;
 }
 
 .limits {
