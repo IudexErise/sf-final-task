@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Ferry';
+	src: url('./assets/fonts/Ferry-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
 body {
   margin: 0;
 }
@@ -30,6 +37,10 @@ p, span, button, a {
 
 h1, h2, h3, p {
   margin: 0;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
 }
 
 a, button {

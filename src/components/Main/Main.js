@@ -1,10 +1,12 @@
 import React from "react";
+import Headline from "./Headline/Headline";
 import styles from './Main.module.css';
 
-function Main () {
+export default function Main() {
   return (
-    <h1>Main</h1>
+    <div className={styles.container}>
+      <Headline />
+    </div>
+    
   )
 }
-
-export default Main;
