@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: 'Ferry';
   font-style: normal;
@@ -30,4 +34,8 @@ h1, h2, h3, p {
 
 a, button {
   cursor: pointer;
+}
+
+footer {
+  background-color: #029491;
 }

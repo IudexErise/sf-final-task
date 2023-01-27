@@ -5,7 +5,7 @@ import Profile from './Profile/Profile';
 
 export default function User() {
 
-  let loggedIn = true;
+  let loggedIn = false;
 
   return (
     <div className={styles.container}>
