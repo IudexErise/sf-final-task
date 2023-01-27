@@ -1,0 +1,9 @@
+.container {
+  margin-bottom: 118px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}

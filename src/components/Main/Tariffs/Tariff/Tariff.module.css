@@ -1,0 +1,96 @@
+.container {
+  width: 415px;
+  height: 540px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.headline {
+  height: 121px;
+  background: #FFB64F;
+  border-radius: 10px 10px 0px 0px;
+  display: grid;
+  padding: 11px 16px 0 30px;
+  grid-template-columns: 285px 1fr;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  margin: 20px 0 10px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+}
+
+.details {
+  margin: 15px 10px 24px 30px;
+}
+
+.current {
+  background: #3BA5E0;
+  border-radius: 10px;
+  width: 134px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 241px;
+}
+
+.currentText {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.containerPrice {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.deal {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-right: 19px;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-decoration-line: line-through;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.textBold {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 50px 0 10px;
+}
+
+.perks {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  margin-bottom: 55px;
+  gap: 8px
+}
+
+.containerButton {
+  display: flex;
+  justify-content: center;
+}

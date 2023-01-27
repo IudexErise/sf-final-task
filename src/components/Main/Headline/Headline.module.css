@@ -1,4 +1,14 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 743px 1fr;
+  margin: 24px auto 109px;
+}
+
+.headline {
+  margin: 45px 0 20px;
+}
+
+.text {
+  width: 534px;
+  margin-bottom: 70px;
 }
