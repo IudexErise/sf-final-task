@@ -1,13 +1,13 @@
 import React from "react";
 import styles from './Tariff.module.css';
-import Button from './../../../common/Button/Button';
-import tick from '../../../../assets/tick.svg';
+import Button from './../../../../common/Button/Button';
+import tick from '../../../../../assets/tick.svg';
 
 export default function Tariff({ tariffName, tariffDescription, tariffLogo, currentTariff,
   deal, price, installment, installmentPayment, perk1, perk2, perk3 }) {
 
   return (
-    <div className={styles.container}>
+    <div className={[styles['container'], styles[`${tariffName}Border-${currentTariff}`]].join(' ')}>
 
       <div className={[styles['headline'], styles[tariffName]].join(' ')}>
         <div>
@@ -36,11 +36,11 @@ export default function Tariff({ tariffName, tariffDescription, tariffLogo, curr
         }
         <p className={styles.textBold}>В тариф входит:</p>
         <div className={styles.perks}>
-          <img scr={tick} alt='' />
+          <img src={tick} alt='' />
           <p className={styles.text}>{perk1}</p>
-          <img scr={tick} alt='' />
+          <img src={tick} alt='' />
           <p className={styles.text}>{perk2}</p>
-          <img scr={tick} alt='' />
+          <img src={tick} alt='' />
           <p className={styles.text}>{perk3}</p>
         </div>
         <div className={styles.containerButton}>

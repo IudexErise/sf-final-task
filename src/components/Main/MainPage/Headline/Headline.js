@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../../common/Button/Button";
+import Button from "../../../common/Button/Button";
 import styles from './Headline.module.css';
-import image from '../../../assets/section1.png';
+import image from '../../../../assets/section1.png';
 
 export default function Headline() {
   return (
