@@ -1,41 +1,50 @@
 import React from "react";
 import styles from './Tariff.module.css';
-import tariffLogo from '../../../../assets/beginner.svg';
-import tick from '../../../../assets/tick.svg';
 import Button from './../../../common/Button/Button';
+import tick from '../../../../assets/tick.svg';
 
-export default function Tariff() {
+export default function Tariff({ tariffName, tariffDescription, tariffLogo, currentTariff,
+  deal, price, installment, installmentPayment, perk1, perk2, perk3 }) {
+
   return (
     <div className={styles.container}>
 
-      <div className={styles.headline}>
+      <div className={[styles['headline'], styles[tariffName]].join(' ')}>
         <div>
-          <p className={styles.name}>Beginner</p>
-          <p className={styles.text}>Для небольшого исследования</p>
+          <p className={[styles['name'], styles[tariffName]].join(' ')}>{tariffName}</p>
+          <p className={[styles['text'], styles[tariffName]].join(' ')}>{tariffDescription}</p>
         </div>
         <img src={tariffLogo} alt='' />
       </div>
 
       <div className={styles.details}>
-        <div className={styles.current}>
-          <p className={styles.currentText}>Текущий тариф</p>
-        </div>
+        {currentTariff ?
+          <div className={styles.current}>
+            <p className={styles.currentText}>Текущий тариф</p>
+          </div>
+          :
+          <div className={styles.currentMock}></div>
+        }
         <div className={styles.containerPrice}>
-          <span className={styles.deal}>799 ₽</span>
-          <span className={styles.price}>1200 ₽</span>
-        </div>        
-        <p className={styles.text}>или 150 ₽/мес. при рассрочке на 24 мес.</p>
+          <span className={styles.deal}>{deal}</span>
+          <span className={styles.price}>{price}</span>
+        </div>
+        {installment ?
+          <p className={styles.text}>или {installmentPayment} ₽/мес. при рассрочке на 24 мес.</p>
+          :
+          <div className={styles.installmentMock}></div>
+        }
         <p className={styles.textBold}>В тариф входит:</p>
         <div className={styles.perks}>
           <img scr={tick} alt='' />
-          <p className={styles.text}>Безлимитная история запросов</p>
+          <p className={styles.text}>{perk1}</p>
           <img scr={tick} alt='' />
-          <p className={styles.text}>Безопасная сделка</p>
+          <p className={styles.text}>{perk2}</p>
           <img scr={tick} alt='' />
-          <p className={styles.text}>Поддержка 24/7</p>
+          <p className={styles.text}>{perk3}</p>
         </div>
         <div className={styles.containerButton}>
-          <Button text='Перейти в личный кабинет'/>
+          {currentTariff ? <Button text='Перейти в личный кабинет' /> : <Button text='Подробнее' />}
         </div>
       </div>
     </div>

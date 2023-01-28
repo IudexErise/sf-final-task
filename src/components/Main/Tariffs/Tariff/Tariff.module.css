@@ -7,11 +7,25 @@
 
 .headline {
   height: 121px;
-  background: #FFB64F;
   border-radius: 10px 10px 0px 0px;
   display: grid;
   padding: 11px 16px 0 30px;
   grid-template-columns: 285px 1fr;
+}
+
+.beginner {
+  background: #FFB64F;
+  color: #000000;
+}
+
+.pro {
+  background: #7CE3E1;
+  color: #000000;
+}
+
+.business {
+  background: #000000;
+  color: white;
 }
 
 .name {
@@ -20,6 +34,7 @@
   line-height: 36px;
   letter-spacing: 0.01em;
   margin: 20px 0 10px;
+  text-transform: capitalize;
 }
 
 .text {
@@ -41,6 +56,10 @@
   justify-content: center;
   align-items: center;
   margin-left: 241px;
+}
+
+.currentMock {
+  height: 24px;
 }
 
 .currentText {
@@ -72,6 +91,10 @@
   letter-spacing: 0.01em;
   text-decoration-line: line-through;
   color: rgb(0, 0, 0, 0.5);
+}
+
+.installmentMock {
+  height: 22px;
 }
 
 .textBold {
