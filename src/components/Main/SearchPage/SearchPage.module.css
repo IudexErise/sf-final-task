@@ -1,0 +1,27 @@
+.container {
+  margin: 69px 0 64px;
+  display: grid;
+  grid-template-columns: 872px 1fr;
+}
+
+.headline {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  width: 800px;
+  margin-bottom: 25px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.text:nth-of-type(2) {
+  margin-bottom: 47px;
+}
+
+.image {
+  margin-top: 63px;
+}

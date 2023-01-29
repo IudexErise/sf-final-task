@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  margin-right: 17px;
+}
+
+.inputClicked {
+  border: 1px solid #000000;
+  content: url(../../../../../../assets/tick.svg);
+}
+
+.inputInactive {
+  border: 1px solid rgb(0, 0, 0, 0.4);
+}
+
+label {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+}
+
+.labelClicked {
+  color: #000000;
+}
+
+.labelInactive {
+  color: rgb(0, 0, 0, 0.4);
+}

@@ -29,7 +29,7 @@ h2 {
   color: #000000;
 }
 
-p, span, button, a {
+p, span, button, a, label {
   text-decoration: none;
   font-family: 'Inter';
   color: #000000;
