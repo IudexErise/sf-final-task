@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  margin: 14px 0 80px;
+}
+
+.containerHeadline {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  margin-top: 55px;
+  margin-bottom: 14px;
+}
+
+.image {
+  width: 322px;
+  height: 342px;
+  margin-left: 112px;
+}
