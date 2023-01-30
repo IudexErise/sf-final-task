@@ -1,9 +1,9 @@
 import React from "react";
-import styles from './Authorization.module.css';
+import styles from './AuthorizationPage.module.css';
 import characters from '../../../assets/authorization.svg';
 import LoginForm from "./LoginForm/LoginForm";
 
-export default function Authorization() {
+export default function AuthorizationPage() {
   return (
     <div className={styles.container}>
 

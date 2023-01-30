@@ -6,6 +6,10 @@
 
 .headline {
   margin: 45px 0 20px;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.01em;
 }
 
 .text {

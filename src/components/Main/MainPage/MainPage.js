@@ -1,12 +1,12 @@
 import React from "react";
-import Headline from "./Headline/Headline";
+import MainHeadline from "./MainHeadline/MainHeadline";
 import Tariffs from "./Tariffs/Tariffs";
 import WhyUs from "./WhyUs/WhyUs";
 
 export default function MainPage() {
   return (
     <>
-      <Headline />
+      <MainHeadline />
       <WhyUs />
       <Tariffs />
     </>

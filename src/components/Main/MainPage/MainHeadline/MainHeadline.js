@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "../../../common/Button/Button";
-import styles from './Headline.module.css';
+import styles from './MainHeadline.module.css';
 import image from '../../../../assets/section1.png';
 
-export default function Headline() {
+export default function MainHeadline() {
   return (
     <section className={styles.container}>
       <div>

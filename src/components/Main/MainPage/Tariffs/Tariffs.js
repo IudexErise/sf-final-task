@@ -70,7 +70,7 @@ let tarrifs = tarrifsArray.map((tariff) => {
 export default function Tariffs() {
   return (
     <section className={styles.container}>
-      <h2>Тарифы</h2>
+      <h2 className={styles.headline}>Тарифы</h2>
       <div className={styles.items}>
         {tarrifs}
       </div>

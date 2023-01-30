@@ -23,7 +23,7 @@ export default function SearchForm() {
         <div>
           <ParametersBlock />
           <div className={styles.buttonBlock}>
-            <Button text='Поиск' />
+            <Button text='Поиск' disabled={true}/>
             <p className={styles.subText}>* Обязательные к заполнению поля</p>
           </div>          
         </div>        

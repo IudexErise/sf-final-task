@@ -12,6 +12,11 @@
 }
 
 .button:hover {
-  background: #D2D2D2;
-  color: black;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.button:disabled {
+  background: #ACB7FF;
+  transform: none;
 }

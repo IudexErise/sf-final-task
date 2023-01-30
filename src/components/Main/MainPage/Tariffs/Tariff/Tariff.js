@@ -44,7 +44,10 @@ export default function Tariff({ tariffName, tariffDescription, tariffLogo, curr
           <p className={styles.text}>{perk3}</p>
         </div>
         <div className={styles.containerButton}>
-          {currentTariff ? <Button text='Перейти в личный кабинет' /> : <Button text='Подробнее' />}
+          {currentTariff ? 
+            <button className={styles.button}>Перейти в личный кабинет</button>
+          : 
+            <Button text='Подробнее' />}
         </div>
       </div>
     </div>
