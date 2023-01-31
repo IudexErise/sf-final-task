@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './AuthorizationPage.module.css';
-import characters from '../../../assets/authorization.svg';
+import characters from '../../../assets/images/authorization.svg';
 import LoginForm from "./LoginForm/LoginForm";
 
 export default function AuthorizationPage() {

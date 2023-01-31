@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Registration.module.css';
-import devider from '../../../../assets/devider.svg';
+import devider from '../../../../assets/images/devider.svg';
 
 export default function Registration({loggedIn, setLoggedIn}) {
   return (

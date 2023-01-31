@@ -1,9 +1,9 @@
 import React from "react";
 import Tariff from "./Tariff/Tariff";
 import styles from './Tariffs.module.css';
-import tariffLogo1 from '../../../../assets/beginner.svg';
-import tariffLogo2 from '../../../../assets/pro.svg';
-import tariffLogo3 from '../../../../assets/business.svg';
+import tariffLogo1 from '../../../../assets/images/beginner.svg';
+import tariffLogo2 from '../../../../assets/images/pro.svg';
+import tariffLogo3 from '../../../../assets/images/business.svg';
 
 const tarrifsArray = [
   {

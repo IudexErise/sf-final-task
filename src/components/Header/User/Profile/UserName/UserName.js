@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './UserName.module.css';
-import avatar from '../../../../../assets/avatar.png';
+import avatar from '../../../../../assets/images/avatar.png';
 
 export default function UserName({loggedIn, setLoggedIn}) {
   return (

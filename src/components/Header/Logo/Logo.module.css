@@ -1,3 +1,13 @@
 .container {
   width: 542px;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 111px;
+  }
+
+  .image {
+    width: 111px;
+  }
+}

@@ -1,5 +1,7 @@
-.container {
-  
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
 }
 
 .headline {

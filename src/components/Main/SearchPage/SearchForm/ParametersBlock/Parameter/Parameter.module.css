@@ -13,7 +13,7 @@ input {
 
 .inputClicked {
   border: 1px solid #000000;
-  content: url(../../../../../../assets/tick.svg);
+  content: url(../../../../../../assets/images/tick.svg);
 }
 
 .inputInactive {

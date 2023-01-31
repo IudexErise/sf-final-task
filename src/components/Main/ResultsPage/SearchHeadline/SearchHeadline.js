@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './SearchHeadline.module.css';
-import image from '../../../../assets/results.svg';
+import image from '../../../../assets/images/results.svg';
 
 export default function SearchHeadline() {
   return (

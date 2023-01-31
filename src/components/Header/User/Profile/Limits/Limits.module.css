@@ -31,3 +31,31 @@
   line-height: 17px;  
   color: #8AC540;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 132px;
+    align-items: flex-start;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .text {
+    font-size: 8px;
+    line-height: 10px;
+    color: rgb(0, 0, 0, 0.4);
+    margin-left: 10px;
+    margin-bottom: 2px;
+  }
+
+  .usedLimit {
+    margin-left: 10px;
+
+  }
+
+  .totalLimit {
+    margin-left: 10px;
+  }
+}

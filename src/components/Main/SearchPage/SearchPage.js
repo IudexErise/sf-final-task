@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './SearchPage.module.css';
 import SearchForm from "./SearchForm/SearchForm";
-import image from '../../../assets/searchPage.svg';
+import image from '../../../assets/images/searchPage.svg';
 
 export default function SearchPage() {
   return (

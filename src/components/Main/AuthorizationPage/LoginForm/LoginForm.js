@@ -1,10 +1,10 @@
 import React from "react";
 import styles from './LoginForm.module.css';
-import lock from '../../../../assets/lock.svg';
+import lock from '../../../../assets/images/lock.svg';
 import Button from './../../../common/Button/Button';
-import google from '../../../../assets/google.svg';
-import facebook from '../../../../assets/facebook.svg';
-import yandex from '../../../../assets/yandex.svg';
+import google from '../../../../assets/images/google.svg';
+import facebook from '../../../../assets/images/facebook.svg';
+import yandex from '../../../../assets/images/yandex.svg';
 
 export default function LoginForm() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './Tariff.module.css';
 import Button from './../../../../common/Button/Button';
-import tick from '../../../../../assets/tick.svg';
+import tick from '../../../../../assets/images/tick.svg';
 
 export default function Tariff({ tariffName, tariffDescription, tariffLogo, currentTariff,
   deal, price, installment, installmentPayment, perk1, perk2, perk3 }) {

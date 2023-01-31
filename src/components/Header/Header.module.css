@@ -6,3 +6,30 @@
   align-items: center;
   grid-template-columns: 1fr 236px 1fr;
 }
+
+.mobileShow {
+  display: none;
+}
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 335px;
+    height: 93px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobileHide {
+    display: none;
+  }
+
+  .mobileShow {
+    display: block;
+  }
+
+  .button {
+    border: none;
+  }
+}

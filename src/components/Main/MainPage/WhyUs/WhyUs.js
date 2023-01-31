@@ -1,12 +1,12 @@
 import React from "react";
 import Tile from "./Tile/Tile";
 import styles from './WhyUs.module.css';
-import tileOneImage from '../../../../assets/stopwatch.svg';
-import tileTwoImage from '../../../../assets/search.svg';
-import tileThreeImage from '../../../../assets/shield.svg';
-import arrowPrevious from '../../../../assets/arrow-left.svg';
-import arrowNext from '../../../../assets/arrow-right.svg';
-import sectionImage from '../../../../assets/section2.png';
+import tileOneImage from '../../../../assets/images/stopwatch.svg';
+import tileTwoImage from '../../../../assets/images/search.svg';
+import tileThreeImage from '../../../../assets/images/shield.svg';
+import arrowPrevious from '../../../../assets/images/arrow-left.svg';
+import arrowNext from '../../../../assets/images/arrow-right.svg';
+import sectionImage from '../../../../assets/images/section2.png';
 
 const tilesArray = [
   {

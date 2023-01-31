@@ -8,9 +8,9 @@ import ResultsPage from "./ResultsPage/ResultsPage";
 export default function Main() {
   return (
     <div className={styles.container}>
-      {/* <MainPage />
+      <MainPage />
       <AuthorizationPage />
-      <SearchPage /> */}
+      <SearchPage />
       <ResultsPage />
     </div>
   )

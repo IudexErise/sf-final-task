@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Article.module.css';
-import image from '../../../../../assets/article.png';
+import image from '../../../../../assets/images/article.png';
 
 export default function Article() {
   return (

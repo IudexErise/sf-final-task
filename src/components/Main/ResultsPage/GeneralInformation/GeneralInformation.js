@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './GeneralInformation.module.css';
-import arrowPrevious from '../../../../assets/arrow-left.svg';
-import arrowNext from '../../../../assets/arrow-right.svg';
+import arrowPrevious from '../../../../assets/images/arrow-left.svg';
+import arrowNext from '../../../../assets/images/arrow-right.svg';
 
 export default function GeneralInformation() {
   return (
