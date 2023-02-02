@@ -9,7 +9,7 @@ export default function Tariff({ tariffName, tariffDescription, tariffLogo, curr
   return (
     <div className={[styles['container'], styles[`${tariffName}Border-${currentTariff}`]].join(' ')}>
 
-      <div className={[styles['headline'], styles[tariffName]].join(' ')}>
+      <div className={[styles['headlineBlock'], styles[tariffName]].join(' ')}>
         <div>
           <p className={[styles['name'], styles[tariffName]].join(' ')}>{tariffName}</p>
           <p className={[styles['text'], styles[tariffName]].join(' ')}>{tariffDescription}</p>

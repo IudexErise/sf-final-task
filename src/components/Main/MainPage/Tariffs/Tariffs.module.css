@@ -14,3 +14,21 @@
   justify-content: space-between;
   margin-top: 70px;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    margin-bottom: 43px;
+  }
+
+  .headline {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 37px;
+    gap: 43px;
+  }
+}

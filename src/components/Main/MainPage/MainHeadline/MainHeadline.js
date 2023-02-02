@@ -11,7 +11,7 @@ export default function MainHeadline() {
         <p className={styles.text}>Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.</p>
         <Button text='Запросить данные' />
       </div>
-      <img src={image} />
+      <img src={image} className={styles.image} />
     </section>
   )
 }

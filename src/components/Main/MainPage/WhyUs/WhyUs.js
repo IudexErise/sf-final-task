@@ -6,7 +6,8 @@ import tileTwoImage from '../../../../assets/images/search.svg';
 import tileThreeImage from '../../../../assets/images/shield.svg';
 import arrowPrevious from '../../../../assets/images/arrow-left.svg';
 import arrowNext from '../../../../assets/images/arrow-right.svg';
-import sectionImage from '../../../../assets/images/section2.png';
+import sectionImage1 from '../../../../assets/images/section2-1.svg';
+import sectionImage2 from '../../../../assets/images/section2-2.svg';
 
 const tilesArray = [
   {
@@ -25,7 +26,7 @@ const tilesArray = [
 
 let tiles = tilesArray.map((tile) => {
   return (
-    <Tile 
+    <Tile
       image={tile.image}
       text={tile.text}
     />
@@ -43,9 +44,13 @@ export default function WhyUs() {
         {tiles}
         <button className={styles.button}>
           <img src={arrowNext} alt='arrow next' />
-        </button>        
+        </button>
       </div>
-      <img src={sectionImage} alt='' />
+      <div className={styles.imagesContainer}>
+        <img src={sectionImage1} alt='' className={styles.image1} />
+        <img src={sectionImage2} alt='' className={styles.image2} />
+      </div>
+      
     </section>
   )
 }

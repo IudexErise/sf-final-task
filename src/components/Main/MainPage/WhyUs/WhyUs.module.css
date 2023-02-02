@@ -24,3 +24,36 @@
   border: none;
 }
 
+.imagesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1320px) {
+  .container {
+    margin-bottom: 80px;
+  }
+
+  .headline {
+    font-size: 28px;
+    line-height: 34px;
+    width: 250px;
+  }
+
+  .carousel {
+    margin: 32px 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .image1 {
+    width: 335px;
+  }
+
+  .image2 {
+    display: none;
+  }  
+}
+

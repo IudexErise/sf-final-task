@@ -23,3 +23,22 @@
   line-height: 22px;
   letter-spacing: 0.01em;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 298px;
+    height: 188px;
+  }
+
+  .image {
+    width: 57px;
+    height: 64px;
+    margin: 10px 0;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+  }
+}
