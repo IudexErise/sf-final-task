@@ -9,11 +9,11 @@ export default function SearchForm() {
       <div className={styles.contents}>
         <div>
           <p className={styles.text}>ИНН компании *</p>
-          <input className={styles.input} />
+          <input className={styles.input} placeholder='10 цифр' />
           <p className={styles.text}>Тональность</p>
           <select className={styles.select} />
           <p className={styles.text}>Количество документов в выдаче *</p>
-          <input className={styles.input} />
+          <input className={styles.input} placeholder='От 1 до 1000'/>
           <p className={styles.text}>Диапазон поиска *</p>
           <div className={styles.dates}>
             <select className={styles.select} />

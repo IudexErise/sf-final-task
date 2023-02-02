@@ -55,3 +55,34 @@
   color: #949494;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 375px;
+    height: 688px;
+  }
+  
+  .contents {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 0 15px;
+  }
+
+  .input {
+    width: 335px;
+  }
+
+  .select {
+    width: 335px;
+    margin-bottom: 20px;
+  }
+
+  .dates {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .buttonBlock {
+    margin: 20px 0 0;
+  }
+}
