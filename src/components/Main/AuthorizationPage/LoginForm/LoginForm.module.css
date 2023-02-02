@@ -22,20 +22,12 @@
 
 .linksContainer {
   display: flex;
-  margin: 25px 0 40px;  
-}
-
-.linksContainer button:nth-child(1) {
-  width: 151px;
-  height: 27px;
-}
-
-.linksContainer button:nth-child(2) {
-  width: 213px;
-  height: 27px;
+  margin: 25px 0 40px;
 }
 
 .active {
+  width: 151px;
+  height: 27px;
   border: none;
   background: white;
   border-bottom: 2px solid #029491;
@@ -47,6 +39,8 @@
 }
 
 .inactive {
+  width: 213px;
+  height: 27px;
   border: none;
   background: white;
   border-bottom: 2px solid #C7C7C7;
@@ -54,7 +48,7 @@
   line-height: 19px;
   letter-spacing: 0.02em;
   color: #C7C7C7;
-} 
+}
 
 .text {
   font-size: 16px;
@@ -113,4 +107,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1320px) {
+  .image {
+    margin-left: 100px;
+  }
+
+  .form {
+    width: 335px;
+    height: 504px;
+    margin: -20px 0 0 0;
+  }
+
+  .container {
+    width: 305px;
+  }
+
+  .active {
+    width: 103px;
+  }
+
+  .inactive {
+    width: 182px;
+  }
+
+  .input {
+    width: 286px;
+  }
+
+  .submitButton button {
+    width: 305px;
+  }
 }

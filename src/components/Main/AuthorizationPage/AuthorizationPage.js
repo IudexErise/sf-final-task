@@ -15,7 +15,7 @@ export default function AuthorizationPage() {
       <img src={characters} alt='' className={styles.image} />
       </div>
       <LoginForm />
-      
+      <img src={characters} alt='' className={styles.imageMobile} />
     </div>
   )
 }
