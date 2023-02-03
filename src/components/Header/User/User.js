@@ -9,7 +9,10 @@ export default function User() {
 
   return (
     <div className={styles.container}>
-      {loggedIn ? <Profile loggedIn={loggedIn} setLoggedIn={setLoggedIn} /> : <Registration loggedIn={loggedIn} setLoggedIn={setLoggedIn} />}
+      {loggedIn ? 
+      <Profile loggedIn={loggedIn} setLoggedIn={setLoggedIn} /> 
+      : 
+      <Registration loggedIn={loggedIn} setLoggedIn={setLoggedIn} />}
     </div>
   )
 }

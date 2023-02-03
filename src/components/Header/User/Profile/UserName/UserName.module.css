@@ -25,3 +25,17 @@
   cursor: pointer;
   text-align: right;
 }
+
+@media screen and (max-width: 1320px) {
+  .userName {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .logout {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgb(255, 255, 255, 0.4);
+  }
+}

@@ -1,4 +1,4 @@
-.registration {
+.container {
   display: flex;
   align-items: center;
 }
@@ -25,4 +25,30 @@
   letter-spacing: 0.01em;
   color: #000000;
   border: none;
+}
+
+@media screen and (max-width: 1320px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .signup {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: rgb(255, 255, 255, 0.4);
+  }
+
+  .devider {
+    display: none;
+  }
+
+  .signin {
+    width: 295px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+  }
 }

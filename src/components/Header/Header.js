@@ -5,8 +5,12 @@ import Navigation from './Navigation/Navigation';
 import Limits from './User/Profile/Limits/Limits';
 import User from './User/User';
 import sidemenu from '../../assets/images/sidemenu.svg';
+import { useState } from 'react';
+import Sidemenu from './Sidemenu/Sidemenu';
 
 export default function Header() {
+  const [extended, setExtended] = useState(false);
+
   return (
     <div className={styles.container}>
       <Logo />
@@ -19,9 +23,12 @@ export default function Header() {
       <div className={styles.mobileHide}>
         <User />
       </div>
-      <button className={[styles['mobileShow'], styles['button']].join(' ')}>      
+      <button 
+        className={[styles['mobileShow'], styles['button']].join(' ')}
+        onClick={() => setExtended(!extended)}>      
         <img src={sidemenu} alt='side menu' />
-      </button>        
+      </button>
+      {extended && <Sidemenu extended={extended} setExtended={setExtended} /> }       
     </div>
   )
 }
