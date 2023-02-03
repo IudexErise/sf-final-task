@@ -12,7 +12,7 @@ export default function Article() {
         <div className={styles.tag}>
           <span>Технические новости</span>
         </div>
-        <img src={image} />
+        <img src={image} className={styles.image}/>
         <div className={styles.textBlock}>
           <p className={styles.text}>
             SkillFactory — школа для всех, кто хочет изменить свою карьеру и жизнь.

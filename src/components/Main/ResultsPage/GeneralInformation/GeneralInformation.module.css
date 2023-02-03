@@ -52,3 +52,37 @@
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    margin-bottom: 57px;
+  }
+
+  .headline {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    letter-spacing: 0.01em;
+    margin-bottom: 34px;
+  }
+
+  .table {
+    width: 298px;
+    height: 140px;
+  }
+
+  .tableHead {
+    width: 298px;
+    height: 70px;
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: 1fr 80px 80px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+}

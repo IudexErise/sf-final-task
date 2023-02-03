@@ -30,12 +30,12 @@ a.text {
   line-height: 31px;
   letter-spacing: 0.02em;
   color: #000000;
-  margin: 24px 0 14px 0;
+  margin: 24px 0 14px;
 }
 
 .tag {
   width: 157px;
-  height: 22px;  
+  height: 22px;
   margin-bottom: 17px;
   background: #FFB64F;
   border-radius: 5px;
@@ -48,6 +48,10 @@ a.text {
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.02em;
+}
+
+.image {
+  border-radius: 10px;
 }
 
 .textBlock {
@@ -78,4 +82,59 @@ a.text {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 335px;
+    height: 694px;
+  }
+
+  .contents {
+    padding: 19px 14px 18px 24px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+  }
+
+  span.text {
+    margin-right: 9px;
+  }
+
+  .headline {
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin: 11px 0 10px;
+  }
+
+  .tag {
+    width: 132px;
+    height: 20px;
+    margin-bottom: 13px;
+  }
+
+  .tag span {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+  }
+
+  .image {
+    width: 297px;
+    height: 158px;
+  }
+
+  .textBlock {
+    margin: 18px 0 25px;
+  }
+
+  .source {
+    width: 195px;
+    height: 40px;
+  }
 }

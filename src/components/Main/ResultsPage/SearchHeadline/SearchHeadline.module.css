@@ -18,3 +18,25 @@
   line-height: 24px;
   letter-spacing: 0.02em;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    margin-bottom: 59px;
+  }
+
+  .headline {
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0 0 21px;
+    letter-spacing: 0.01em;
+    width: 344px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
