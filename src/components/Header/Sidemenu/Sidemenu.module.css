@@ -17,3 +17,7 @@
   justify-content: space-between;
   margin: 35px 0;
 }
+
+.image {
+  cursor: pointer;
+}

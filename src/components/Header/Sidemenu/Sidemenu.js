@@ -5,14 +5,21 @@ import cross from '../../../assets/images/cross.svg';
 import Navigation from '../Navigation/Navigation';
 import User from '../User/User';
 
-export default function Sidemenu({extended, setExtended}) {
+export default function Sidemenu({ extended, setExtended }) {
   return (
     <div className={styles.container}>
       <div className={styles.topBlock}>
         <img src={logo} alt='' />
-        <img src={cross} alt='close' onClick={() => setExtended(!extended)} />
+        <img
+          src={cross} alt='close'
+          onClick={() => setExtended(!extended)}
+          className={styles.image}
+          />
       </div>
-      <Navigation />
+      <div onClick={() => setExtended(!extended)}>
+        <Navigation />
+      </div>
+
       <User />
     </div>
   )
