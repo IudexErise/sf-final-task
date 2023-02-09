@@ -35,7 +35,7 @@ let tiles = tilesArray.map((tile) => {
 
 export default function WhyUs() {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='faq'>
       <h2 className={styles.headline}>Почему именно мы</h2>
       <div className={styles.carousel}>
         <button className={styles.button}>
