@@ -5,14 +5,14 @@ import Profile from './Profile/Profile';
 
 export default function User() {
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  let loggedIn = false;
 
   return (
     <div className={styles.container}>
       {loggedIn ? 
-      <Profile loggedIn={loggedIn} setLoggedIn={setLoggedIn} /> 
+      <Profile  /> 
       : 
-      <Registration loggedIn={loggedIn} setLoggedIn={setLoggedIn} />}
+      <Registration  />}
     </div>
   )
 }
