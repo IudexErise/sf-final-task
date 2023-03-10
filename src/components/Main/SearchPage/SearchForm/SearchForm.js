@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ParametersBlock from "./ParametersBlock/ParametersBlock";
 import styles from './SearchForm.module.css';
 import Button from './../../../common/Button/Button';
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function SearchForm() {
 
@@ -13,6 +13,7 @@ export default function SearchForm() {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [datesError, setDatesError] = useState({ start: '', end: '', code: 0 });
+  const navigate = useNavigate();
 
   function validateInn(inn) {
     if (inn === '') {
@@ -65,11 +66,11 @@ export default function SearchForm() {
     validateDates(startDate, endDate);
   }
 
-  function sendForm(event) {
-    event.preventDefault();
+  function submitForm(e) {
+    e.preventDefault();
     validateForm();
     if (validateInn(inn) === true && validateDocumentsNumber(documentsNumber) === true && validateDates(startDate, endDate) === true) {
-      alert('Данные введены верно');
+      navigate('/results');
     } else {
       alert('Исправьте ошибки');
     }
@@ -87,7 +88,7 @@ export default function SearchForm() {
             type='number'
             value={inn}
             onChange={(e) => setInn(e.target.value)}
-            /* onBlur={() => validateInn(inn)} */
+            onBlur={() => validateInn(inn)}
             title={errorInn.message}
           />
           <p className={styles.text}>Тональность</p>
@@ -104,7 +105,7 @@ export default function SearchForm() {
             type='number'
             value={documentsNumber}
             onChange={(e) => setDocumentsNumber(e.target.value)}
-            /* onBlur={() => validateDocumentsNumber(documentsNumber)} */
+            onBlur={() => validateDocumentsNumber(documentsNumber)}
             title={errorDocumentsNumber.message}
             required
           />
@@ -116,7 +117,7 @@ export default function SearchForm() {
               required
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
-              /* onBlur={() => validateDates(startDate, endDate)} */
+              onBlur={() => validateDates(startDate, endDate)} 
               title={datesError.start}
             />
             <input
@@ -125,7 +126,7 @@ export default function SearchForm() {
               required
               value={endDate}
               onChange={(e) => setEndDate(e.target.value)}
-              /* onBlur={() => validateDates(startDate, endDate)} */
+              onBlur={() => validateDates(startDate, endDate)} 
               title={datesError.end}
             />
           </div>
@@ -133,7 +134,7 @@ export default function SearchForm() {
         <div>
           <ParametersBlock />
           <div className={styles.buttonBlock}>
-            <Button text='Поиск' onClick={(event) => sendForm(event)} />
+            <Button text='Поиск' onClick={(e) => submitForm(e)} />
             <p className={styles.subText}>* Обязательные к заполнению поля</p>
           </div>
         </div>

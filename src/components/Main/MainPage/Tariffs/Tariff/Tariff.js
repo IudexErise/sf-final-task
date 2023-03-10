@@ -27,7 +27,7 @@ export default function Tariff({ tariffName, tariffDescription, tariffLogo, curr
         }
         <div className={styles.containerPrice}>
           <span className={styles.deal}>{deal}</span>
-          <span className={styles.price}>{price}</span>
+          <del className={styles.price}>{price}</del>
         </div>
         {installment ?
           <p className={styles.text}>или {installmentPayment} ₽/мес. при рассрочке на 24 мес.</p>

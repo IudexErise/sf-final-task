@@ -19,7 +19,7 @@ h2 {
   color: #000000;
 }
 
-h3 {
+h3, del {
   font-family: 'Inter';
   color: #000000;
 }
