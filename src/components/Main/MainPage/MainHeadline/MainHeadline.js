@@ -14,7 +14,7 @@ export default function MainHeadline() {
           <Button text='Запросить данные' />
         </Link>
       </div>
-      <img src={image} className={styles.image} />
+      <img src={image} className={styles.image} alt='' />
     </section>
   )
 }

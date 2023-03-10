@@ -9,14 +9,6 @@
   letter-spacing: 0.01em;
 }
 
-.carousel {
-  display: flex;
-  margin: 70px 0;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
 .button {
   width: 39px;
   height: 39px;
@@ -40,14 +32,7 @@
     line-height: 34px;
     width: 250px;
   }
-
-  .carousel {
-    margin: 32px 0 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
+  
   .image1 {
     width: 335px;
   }

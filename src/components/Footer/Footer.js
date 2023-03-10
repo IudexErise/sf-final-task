@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo-footer.svg';
 function Footer () {
   return (
     <div className={styles.container}>
-      <img src={logo} className={styles.image}/>
+      <img src={logo} className={styles.image} alt=''/>
       <div>
         <p className={styles.text}>г. Москва, Цветной б-р, 40</p>
         <p className={styles.text}>+7 495 771 21 11</p>

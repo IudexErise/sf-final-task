@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './User.module.css';
 import Registration from './Registration/Registration';
 import Profile from './Profile/Profile';
