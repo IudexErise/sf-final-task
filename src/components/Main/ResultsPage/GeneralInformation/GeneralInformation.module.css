@@ -64,4 +64,26 @@
     margin-bottom: 34px;
   }
 
+  .carousel {
+    flex-direction: column;
+    width: 298px;
+    height: 140px;
+    margin-left: 24px;
+  }
+
+  .carouselHead {
+    width: 298px;
+    height: 75px;
+    background: #029491;
+    border-radius: 7px 7px 0px 0px;
+    flex-direction: row;
+  }
+
+  .category {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+  }
+
 }

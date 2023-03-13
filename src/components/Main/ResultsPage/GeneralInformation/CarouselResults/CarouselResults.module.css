@@ -1,5 +1,15 @@
 .container {
-  width: 1120px;
+  width: 1118px;
   height: 158px;
-  margin-left: -7px;
+  margin-left: -9px;
+  margin-top: -20px;
 }
+
+@media screen and (max-width: 1320px) {
+  .container {
+    width: 298px;
+    height: 65px;
+    margin-left: 0;
+  }
+}
+

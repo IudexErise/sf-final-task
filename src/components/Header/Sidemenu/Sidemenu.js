@@ -14,13 +14,14 @@ export default function Sidemenu({ extended, setExtended }) {
           src={cross} alt='close'
           onClick={() => setExtended(!extended)}
           className={styles.image}
-          />
+        />
       </div>
       <div onClick={() => setExtended(!extended)}>
         <Navigation />
       </div>
-
-      <User />
+      <div onClick={() => setExtended(!extended)}>
+        <User />
+      </div>
     </div>
   )
 }

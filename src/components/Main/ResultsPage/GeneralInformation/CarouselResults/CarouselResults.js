@@ -110,7 +110,8 @@ export default function CarouselResults() {
       {
         breakpoint: 1320,
         settings: {
-          slidesToShow: 1,
+          nextArrow: <NextArrow rightAdj='-40px' topAdj='50px' />,
+          prevArrow: <PreviousArrow leftAdj='-40px' topAdj='50px' />,
         }
       },]
   };
