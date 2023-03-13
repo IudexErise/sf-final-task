@@ -1,14 +1,14 @@
 import React from "react";
 import Tile from "./Tile/Tile";
-import styles from './Carousel.module.css';
+import styles from './CarouselWhyUs.module.css';
 import tileOneImage from '../../../../../assets/images/stopwatch.svg';
 import tileTwoImage from '../../../../../assets/images/search.svg';
 import tileThreeImage from '../../../../../assets/images/shield.svg';
-import arrowPrevious from '../../../../../assets/images/arrow-left.svg';
-import arrowNext from '../../../../../assets/images/arrow-right.svg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import NextArrow from "../../../../common/NextArrow/NextArrow";
+import PreviousArrow from "../../../../common/PreviousArrow/PreviousArrow";
 
 const tilesArray = [
   {
@@ -46,40 +46,24 @@ let tiles = tilesArray.map((tile) => {
   )
 })
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <button 
-    className={className}
-    style={{ ...style, display: "block", width: '39px', height: '39px', background: 'none', border: 'none'}}
-    onClick={onClick}>
-      <img src={arrowNext} alt='arrow next' />
-    </button>
-  );
-}
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <button 
-    className={className}
-    style={{ ...style, display: "block", width: '39px', height: '39px', background: 'none', border: 'none'}}
-    onClick={onClick}>
-      <img src={arrowPrevious} alt='arrow previous' />
-    </button>
-  );
-}
-
-export default function Carousel() {
+export default function CarouselWhyUs() {
 
   let settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PreviousArrow />,
+    responsive: [
+      {
+        breakpoint: 1320,
+        settings: {
+          slidesToShow: 1,
+        }
+      },]
   };
 
   return (

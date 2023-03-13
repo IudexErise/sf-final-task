@@ -12,9 +12,6 @@
 @media screen and (max-width: 1320px) {
   .carousel {
     margin: 32px 0 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
   }
 }
 
