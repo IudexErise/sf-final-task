@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   gap: 26px;
+  z-index: 1;
 }
 
 .category {

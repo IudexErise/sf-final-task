@@ -104,8 +104,8 @@ export default function CarouselResults() {
     speed: 700,
     variableWidth: true,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PreviousArrow  />,
+    nextArrow: <NextArrow rightAdj='-55px' />,
+    prevArrow: <PreviousArrow leftAdj='-170px' />,
     responsive: [
       {
         breakpoint: 1320,
