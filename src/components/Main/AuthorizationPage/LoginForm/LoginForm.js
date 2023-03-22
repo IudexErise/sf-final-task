@@ -9,15 +9,15 @@ import axios from "axios";
 
 export default function LoginForm() {
 
-  const [login, setLogin] = useState('');
-  const [password, setPassword] = useState('');
+  const [login, setLogin] = useState('sf_student10');
+  const [password, setPassword] = useState('r$YtM#sXy3');
   const url = 'https://gateway.scan-interfax.ru/api/v1/account/login'
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(url, { login: login, password: password });
-      console.log(response.data);
+      localStorage.setItem('token', JSON.stringify(response.data.accessToken));
     } catch (error) {
       alert(error.response.data.message);
     }
