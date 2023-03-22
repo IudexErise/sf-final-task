@@ -72,7 +72,7 @@ export default function SearchForm() {
     if (validateInn(inn) === true && validateDocumentsNumber(documentsNumber) === true && validateDates(startDate, endDate) === true) {
       navigate('/results');
     } else {
-      alert('Исправьте ошибки');
+      
     }
   }
 

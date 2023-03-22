@@ -20,7 +20,7 @@ export default function Limits() {
   }
 
   return (
-    <div className={styles.container} onClick={handleClick}>
+    <div className={styles.container}>
       <p className={styles.text}>Использовано компаний</p>
       <p className={styles.usedLimit}>34</p>
       <p className={styles.text}>Лимит по компаниям</p>

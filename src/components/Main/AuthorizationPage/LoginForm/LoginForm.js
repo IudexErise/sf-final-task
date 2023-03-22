@@ -6,11 +6,13 @@ import google from '../../../../assets/images/google.svg';
 import facebook from '../../../../assets/images/facebook.svg';
 import yandex from '../../../../assets/images/yandex.svg';
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
 
-  const [login, setLogin] = useState('sf_student10');
-  const [password, setPassword] = useState('r$YtM#sXy3');
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
   const url = 'https://gateway.scan-interfax.ru/api/v1/account/login'
 
   const handleSubmit = async (e) => {
@@ -18,6 +20,7 @@ export default function LoginForm() {
     try {
       const response = await axios.post(url, { login: login, password: password });
       localStorage.setItem('token', JSON.stringify(response.data.accessToken));
+      navigate('/search');
     } catch (error) {
       alert(error.response.data.message);
     }
